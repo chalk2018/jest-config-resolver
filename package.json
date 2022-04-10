@@ -1,0 +1,59 @@
+{
+    "name": "jest-config-resolver",
+    "version": "1.0.0",
+    "description": "Fast config jest",
+    "scripts": {
+        "build": "set NODE_ENV=production && rollup -c rollup.config.js"
+    },
+    "author": "chalk2017",
+    "engines": {
+        "node": ">=14"
+    },
+    "keywords": [
+        "jest",
+        "config",
+        "preset"
+    ],
+    "license": "MIT",
+    "main": "./index.js",
+    "bin": "",
+    "exports": {
+        ".": {
+          "types": "./lib/index.d.ts",
+          "default": "./lib/index.js"
+        }
+      },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chalk2018/jest-config-resolver.git"
+    },
+    "bugs": {
+        "url": "https://github.com/chalk2018/jest-config-resolver"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "@rollup/plugin-typescript": "^8.3.0",
+        "chalk": "^2.4.1",
+        "copy": "^0.3.2",
+        "fs-extra": "^10.0.0",
+        "npm-run-all": "^4.1.5",
+        "require-all": "^3.0.0",
+        "rollup": "^2.70.0",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-eslint": "^7.0.0",
+        "rollup-plugin-json": "^4.0.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "rollup-plugin-uglify": "^6.0.4",
+        "ts-node": "^9.0.0",
+        "tsconfig-paths": "^3.11.0",
+        "typescript": "^4.0.5",
+        "@types/node": "^10.17.44",
+        "jest": "^27.5.1",
+        "jest-html-reporter": "^3.4.2"
+    }
+}
