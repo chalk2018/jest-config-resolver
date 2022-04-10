@@ -1,6 +1,6 @@
 {
-    "name": "jest-config-resolver",
-    "version": "1.0.0",
+    "name": "jest-fast-config",
+    "version": "1.0.3",
     "description": "Fast config jest",
     "scripts": {
         "build": "set NODE_ENV=production && rollup -c rollup.config.js"
@@ -15,8 +15,9 @@
         "preset"
     ],
     "license": "MIT",
-    "main": "./index.js",
-    "bin": "",
+    "bin": {
+        "test-ts":"bin/jest.js"
+    },
     "exports": {
         ".": {
           "types": "./lib/index.d.ts",
